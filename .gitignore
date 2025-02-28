@@ -1,0 +1,17 @@
+# Archivos de IntelliJ
+/.idea
+*.iml
+/out
+
+# Archivos de Eclipse
+/.settings
+/.classpath
+/.project
+
+# Archivos de NetBeans
+/nbproject
+
+# Otros que no quieras subir (logs, builds, etc.)
+*.log
+target/
+build/
