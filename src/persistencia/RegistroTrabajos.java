@@ -55,12 +55,12 @@ public class RegistroTrabajos { // Declara la clase RegistroTrabajos para gestio
 
             // Se recorre cada trabajo en la lista
             for (int i = 1; i < trabajos.size(); i++) { // Comienza desde 1 porque el primero ya está asignado
-                Trabajo t = trabajos.get(i);
+                Trabajo trabajo = trabajos.get(i);
 
                 // Se compara la nota final del trabajo actual con la del trabajo que se tiene como mejor
-                if (t.getNotaFinal() > mejorTrabajo.getNotaFinal()) {
+                if (trabajo!=null && trabajo.getNotaFinal() > mejorTrabajo.getNotaFinal()) {
                     // Si se encuentra un trabajo con una nota final mayor, se actualiza la variable 'mejor'
-                    mejorTrabajo = t;
+                    mejorTrabajo = trabajo;
                 }
             }
         }
